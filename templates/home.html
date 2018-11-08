@@ -15,9 +15,9 @@
         </div>
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-			<li><a href="/faq/">FAQs</a></li>
-            <li><a href="/docs/">Documentation</a></li>
+            <li class="active"><a href="#">主页</a></li>
+			<li><a href="/faq/">常见问题</a></li>
+            <li><a href="/docs/">文档</a></li>
           </ul>
         </div>
       </div>
@@ -26,15 +26,15 @@
 <section id="home">
 
     <div class="header">
-        <h1>AmiiboAPI</h1>
-        <h2>A RESTful API for Amiibo</h2>
-        <h4>For education purposes only!</h4>
+        <h1>爱秘宝API</h1>
+        <h2>适用于爱秘宝的RESTful API</h2>
+        <h4>仅用于教育目的！</h4>
     </div>
 
 
     <div class="cta">
-        <p>An Amiibo database that holds all amiibo information in a single API.</p>
-		<p>Google spreadsheet: <a href="https://docs.google.com/spreadsheets/d/19E7pMhKN6x583uB6bWVBeaTMyBPtEAC-Bk59Y6cfgxA">view here</a></p>
+        <p>爱秘宝数据库在一个API中保存了所有的爱秘宝信息</p>
+		<p>谷歌电子表格: <a href="https://docs.google.com/spreadsheets/d/19E7pMhKN6x583uB6bWVBeaTMyBPtEAC-Bk59Y6cfgxA">view here</a></p>
     </div>
 
 
@@ -47,17 +47,17 @@
 
                 <div class="center">
                     <h1>
-                        Give it a whirl!
+                        来点旋转
                     </h1>
                     <div class="input-group pad_top">
                         <span class="input-group-addon url">http://www.amiiboapi.com/api/</span>
                         <input id="interactive" type="text" class="form-control" placeholder="amiibo/?name=mario">
-                        <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">submit</button></span>
+                        <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">提交</button></span>
                     </div>
                 </div>
 
-                <small>Need a hint? try <a href="#" onClick="update('amiibo/?name=mario');return false;"><i>amiibo/?name=mario</i></a> or <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo?character=zelda');return false;"><i>amiibo?character=zelda</i></a></small>
-                <p class="lead pad_top">Output Values</p>
+                <small>需要提示? 尝试一下 <a href="#" onClick="update('amiibo/?name=mario');return false;"><i>amiibo/?name=mario</i></a> 或 <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> 或 <a href="#" onClick="update('amiibo?character=zelda');return false;"><i>amiibo?character=zelda</i></a></small>
+                <p class="lead pad_top">输出JSON值</p>
 
                 <pre id="interactive_output" class="pre-scrollable">
 {
