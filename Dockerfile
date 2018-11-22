@@ -2,7 +2,7 @@
 FROM alpine:3.5
 MAINTAINER nintendochina <admin@nintendochina.com>
 
-copy files
+# copy files
 COPY . /app
 
 # install Python modules needed by the Python app
