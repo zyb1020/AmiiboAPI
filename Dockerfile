@@ -14,5 +14,6 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 # tell the port number the container should expose
 EXPOSE 5000
 
+WORKDIR /app
 # run the application
-CMD ["python", "/app/app.py"]
+CMD ["python", "app.py"]
