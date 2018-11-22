@@ -1,6 +1,5 @@
 # our base image
 FROM python:3.6.7-alpine3.8
-MAINTAINER nintendochina <admin@nintendochina.com>
 
 # copy files
 COPY . /app
