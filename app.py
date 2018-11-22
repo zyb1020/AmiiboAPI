@@ -405,4 +405,6 @@ def route_api_amiibo():
     return respond
 
 if __name__ == "__main__":
-    app.run(debug=True, extra_files=['database/amiibo.json'])
+    #app.run(debug=True, extra_files=['database/amiibo.json'])
+	app.run(host='0.0.0.0', port=5000, debug=True, extra_files=['database/amiibo.json'])
+	
