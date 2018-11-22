@@ -1,9 +1,6 @@
 # our base image
-FROM alpine:3.5
+FROM python:3.6.7-alpine3.8
 MAINTAINER nintendochina <admin@nintendochina.com>
-
-# Install python and pip
-RUN apk add --update py2-pip
 
 # copy files
 COPY . /app
@@ -14,6 +11,6 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 # tell the port number the container should expose
 EXPOSE 5000
 
-WORKDIR /app
 # run the application
+WORKDIR /app
 CMD ["python", "app.py"]
